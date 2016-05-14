@@ -7,8 +7,8 @@ RSpec.feature 'phantomjs', js: true do
   end
 
   let(:files) {
-    [fixture_file_path("image.png"),
-     fixture_file_path("image.png")]
+    [fixture_file_path("image1.png"),
+     fixture_file_path("image2.png")]
   }
 
   it "attaches a file to a new temporary file input" do
@@ -29,7 +29,7 @@ RSpec.feature 'phantomjs', js: true do
 
     expect(page).to have_css "input#fake0"
     expect(page).to have_css "input#fake1"
-    expect(find("#fake0").value).to eq "C:\\fakepath\\image.png"
-    expect(find("#fake1").value).to eq "C:\\fakepath\\image.png"
+    expect(find("#fake0").value).to eq "C:\\fakepath\\image1.png"
+    expect(find("#fake1").value).to eq "C:\\fakepath\\image2.png"
   end
 end

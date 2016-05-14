@@ -7,8 +7,6 @@ require 'capybara/rspec'
 require 'capybara/poltergeist'
 Capybara.javascript_driver = :poltergeist
 
-ActiveRecord::Migration.maintain_test_schema!
-
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

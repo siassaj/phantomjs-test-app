@@ -2,9 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '4.2.0'
-gem 'sqlite3'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '4.2.5'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'slim-rails'
@@ -20,7 +18,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4'
 end
 
-group :development do
+group :development do 
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
